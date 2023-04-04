@@ -24,6 +24,7 @@ def hello_ghw():
 def get_hackathons():
     if request.method == "POST":
         hackathons_list["New Hackathon"] = request.json
+        return hackathons_list
     
     else:
         return hackathons_list
